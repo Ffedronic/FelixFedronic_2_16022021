@@ -1,0 +1,4 @@
+charte étoilée
+bleu #0065FC
+version plus claire #DEEBFF
+fond gris #F2F2F2
