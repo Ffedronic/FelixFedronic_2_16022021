@@ -1,20 +1,39 @@
 .border {
-	border: 3px solid black;
+	border: 2px solid black;
 	margin: 2px;
 }
 
+.red {
+    border-color: red;
+}
+
+.green {
+    border-color: green;
+}
+
+.blue {
+    border-color: blue;
+}
+
+.orange {
+    border-color:orange;
+}
+
+.magenta {
+    border-color: darkmagenta;
+}
+
+.grey {
+    border-color: grey;
+}
+
+.brown {
+    border-color: brown;
+}
 
 
 * {
     margin:0px;
     padding:0px;
     list-style-type:none;
-    text-decoration: none;
-    color: black;
-}
-
-body {
-    margin: auto;
-    width: 95%;
-    font-family: 'Raleway';
 }
