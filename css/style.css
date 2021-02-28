@@ -1,6 +1,9 @@
-.border {
-	border: 2px solid black;
-	margin: 2px;
+/*border*/
+
+/*.border {
+	border: 3px solid black;
+    margin: 2px;
+    box-sizing: border-box;
 }
 
 .red {
@@ -30,10 +33,130 @@
 .brown {
     border-color: brown;
 }
+*/
 
-
+/*main style*/
 * {
     margin:0px;
     padding:0px;
     list-style-type:none;
+    color: black;
 }
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin : 50px auto ;
+    font-family: "raleway";
+}
+
+
+/*header*/
+
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px ;
+}
+
+/*header--nav*/
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content :space-between ;
+    margin-bottom: 50px;    
+}
+
+.nav ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 75px;
+    font-size: 1em;
+}
+
+.nav ul li {
+    margin-right: 2px;
+}
+.nav ul a {
+     text-decoration: none;
+     padding: 40px 10px 0px 10px;
+     border-top: 5px #F2F2F2 solid;
+ }
+
+.nav ul a:hover {
+     color : #0065FC ;
+     border-top: 5px #0065FC solid;
+ }
+
+ .menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu p {
+    font-weight: bold;
+}
+
+.menu p a {
+    text-decoration: none;
+    color :#0065FC ;
+}
+
+/*header--description*/
+
+.header__description {
+    margin-bottom : 20px ; 
+}
+
+ .header__description h1 {
+     font-size: 1.8em ;
+     padding-bottom: 5px;
+ }
+
+ .header__description p {
+     font-size: 1em;
+ }
+
+ /*header--search bar*/
+ 
+ .search-bar {
+     margin-bottom: 20px;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+ }
+
+.search-bar__icon {
+    background-color: #F2F2F2;
+    padding: 15px ;
+    border-radius: 15px 0px 0px 15px ;
+    z-index: 1;
+}
+
+.search-bar__input {
+    font-weight: bold;
+    font-size: 1.1em;
+    height: 41px;
+    border: 2px #F2F2F2 solid;
+    z-index: 2 ;
+}
+
+.search-bar button {
+    font-size: 1.1em;
+    margin-left: -2px;
+    padding: 10px 10px 10px 15px;
+    background-color: #0065FC;
+    height: 45px;
+    border: 2px #0065FC solid;
+    border-radius: 0px 10px 10px 0px ;
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+}
+
+.search-bar__button__small {
+    display: none;
+}
+

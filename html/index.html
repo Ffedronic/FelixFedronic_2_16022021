@@ -10,30 +10,32 @@
     <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <title>Reservia</title>
 </head>
-<div class="container border">
-    <body>
+<body>
+    <div class="container border">
         <!--header-->
-        <header class="border red">
+        <header class="header border red">
             <!--nav-->
-            <nav class="border green">
+            <nav class="nav border green">
                 <img src="/images/logo/Reservia.svg" alt="logo" class="border blue">
-                <ul class="border blue">
-                    <li class="border orange"><a href="#hosting">Hébergements</a></li>
-                    <li class="border orange"><a href="#activity">Activités</a></li>
-                </ul>
-                <p class="border blue"><a href="/index.html">S'inscrire</a></p>
+                <div class="menu border blue">
+                    <ul class="border orange">
+                        <li class="border magenta"><a href="#hosting">Hébergements</a></li>
+                        <li class="border magenta"><a href="#activity">Activités</a></li>
+                    </ul>
+                    <p class="border orange"><a href="#">S'inscrire</a></p>
+                </div>
             </nav>
             <!--description-->
-            <article class="border green">
+            <article class="header__description border green">
                 <h1 class="border blue">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="border blue">En plein centre-ville ou en pleine nature</p>
             </article>
             <!--searchBar-->
-            <form class="border green">
-                <i class="fas fa-map-marker-alt border blue"></i>
-                <input type="search" name="searchBar_input" id="searchBar__input" class="border blue">
-                <button class="searchBar__button__xl border blue" type="submit">Rechercher</button>
-                <button class="searchBar__button__small border blue" type="submit"><i class="fas fa-search"></i></button>
+            <form class="search-bar border green">
+                <i class="search-bar__icon fas fa-map-marker-alt border blue"></i>
+                <input type="text" name="searchBar_input" id="search-bar__input" class="search-bar__input border blue">
+                <button class="search-bar__button__xl border blue" type="submit">Rechercher</button>
+                <button class="search-bar__button__small border blue" type="submit"><i class="fas fa-search"></i></button>
             </form>
             <!--filter-->
             <article class="border green">
@@ -367,6 +369,6 @@
                 </ul>
             </section>
         </footer>
-    </body>
-</div>
+    </div>
+</body>
 </html>
