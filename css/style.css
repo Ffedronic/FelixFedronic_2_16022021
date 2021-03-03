@@ -41,13 +41,13 @@
     padding:0px;
     list-style-type:none;
     color: black;
+    font-family: "raleway";
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     margin: 50px auto;
     max-width: 1240px;
-    font-family: "raleway";
 }
 
 
@@ -237,4 +237,53 @@
 
 .search-info__content {
     font-size: 1.1em;
+}
+
+/*hosting blocks*/
+
+#hosting_blocks {
+    display: flex ;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.most_pop_hosting {
+    width: 40%;
+    background-color: #F2F2F2;
+}
+
+.hosting {
+    width: 55%;
+    background-color: #F2F2F2;
+}
+
+
+/*footer*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 50px;
+    padding: 50px 0px 50px 0px ;
+    background-color: #F2F2F2;
+}
+
+.footer__block {
+    margin-left: 30px;
+    margin-right: 150px;
+}
+
+.footer__block__title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer__block__list {
+    text-align: start;
+}
+.footer__block__item {
+    font-size: 1em;
+    margin-bottom: 7px;
 }
