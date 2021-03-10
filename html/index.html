@@ -17,13 +17,11 @@
             <!--nav-->
             <nav class="nav border green">
                 <img src="/images/logo/Reservia.svg" alt="logo" class="border blue">
-                <div class="menu border blue">
-                    <ul class="border orange">
-                        <li class="border magenta"><a href="#hosting">Hébergements</a></li>
-                        <li class="border magenta"><a href="#activity">Activités</a></li>
-                    </ul>
-                    <p class="border orange"><a href="#">S'inscrire</a></p>
-                </div>
+                <ul class="menu border blue">
+                    <li class="menu__item border orange"><a href="#hosting">Hébergements</a></li>
+                    <li class="menu__item border orange"><a href="#activity">Activités</a></li>
+                </ul>
+                <p class="menu__signup border blue"><a href="#">S'inscrire</a></p>
             </nav>
             <!--description-->
             <article class="header__description border green">
@@ -35,39 +33,41 @@
                 <i class="search-bar__icon fas fa-map-marker-alt border blue"></i>
                 <input type="text" name="searchBar_input" id="search-bar__input" class="search-bar__input border blue">
                 <button class="search-bar__button__xl border blue" type="submit">Rechercher</button>
-                <button class="search-bar__button__small border blue" type="submit"><i class="fas fa-search"></i></button>
+                <button class="search-bar__button__small border blue" type="submit"><i class="search-bar__button__small__icon fas fa-search"></i></button>
             </form>
             <!--filter-->
             <article class="filter border green">
                 <h2 class="filter__title border blue">Filtres</h2>
-                <!--filter__item-->
-                <a href="">
-                    <section class="filter__element border blue">
-                        <i class="filter__element__icon fas fa-money-bill-wave border orange"></i>
-                        <h3 class="filter__element__name border orange">Économique</h3>
-                    </section>
-                </a>
-                <!--filter__item-->
-                <a href="">
-                    <section class="filter__element border blue">
-                        <i class="filter__element__icon fas fa-child border orange"></i>
-                        <h3 class="filter__element__name border orange">Familial</h3>
-                    </section>
-                </a>
-                <!--filter__item-->
-                <a href="">
-                    <section class="filter__element border blue">
-                        <i class="filter__element__icon fas fa-heart border orange"></i>
-                        <h3 class="filter__element__name border orange">Romantique</h3>
-                    </section>
-                </a>
-                <!--filter__item-->
-                <a href="">
-                    <section class="filter__element border blue">
-                        <i class="filter__element__icon fas fa-dog border orange"></i>
-                        <h3 class="filter__element__name border orange">Animaux autorisés</h3>
-                    </section>
-                </a>
+                <div class="filter__element__group">
+                    <!--filter__item-->
+                    <a href="">
+                        <section class="filter__element border blue">
+                            <i class="filter__element__icon fas fa-money-bill-wave border orange"></i>
+                            <h3 class="filter__element__name border orange">Économique</h3>
+                        </section>
+                    </a>
+                    <!--filter__item-->
+                    <a href="">
+                        <section class="filter__element border blue">
+                            <i class="filter__element__icon fas fa-child border orange"></i>
+                            <h3 class="filter__element__name border orange">Familial</h3>
+                        </section>
+                    </a>
+                    <!--filter__item-->
+                    <a href="">
+                        <section class="filter__element border blue">
+                            <i class="filter__element__icon fas fa-heart border orange"></i>
+                            <h3 class="filter__element__name border orange">Romantique</h3>
+                        </section>
+                    </a>
+                    <!--filter__item-->
+                    <a href="">
+                        <section class="filter__element border blue">
+                            <i class="filter__element__icon fas fa-dog border orange"></i>
+                            <h3 class="filter__element__name border orange">Animaux autorisés</h3>
+                        </section>
+                    </a>
+                </div>
             </article>
             <!--search info-->
             <aside class="search-info border green">
@@ -77,84 +77,6 @@
         </header>
         <!--hosting blocks-->
         <div id="hosting" class="border red">
-            <!--most popular hosting-->
-            <section class="most_pop_hosting border green">
-                <div class="most_pop_hosting__group__title border blue">
-                    <h2 class="most_pop_hosting__title border orange">Les plus populaires</h2>
-                    <i class="most_pop_hosting__icon fas fa-chart-line border orange"></i>
-                </div>
-                <div class="most_pop_hosting__card__group border blue">
-                    <!--most_pop_hosting__card-->
-                    <article class="most_pop_hosting__card border orange">
-                        <a href="">
-                            <div class="most_pop_hosting__card__image border magenta">
-                                <img src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
-                            </div>
-                            <div class="most_pop_hosting__card__body border magenta">
-                                <header class="border grey">
-                                    <h2 class="most_pop_hosting__card__title">Hôtel Le soleil du matin</h2>
-                                </header>
-                                <footer class="most_pop_hosting__card__footer border grey">
-                                    <p class="most_pop_hosting__card__description border brown">Nuit à partir de 128€</p>
-                                    <div class="most_pop_hosting__card__chart border brown">
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                    </div>
-                                </footer>
-                            </div>
-                        </a>
-                    </article>
-                    <!--most_pop_hosting__card-->
-                    <article class="most_pop_hosting__card border orange">
-                        <a href="">
-                            <div class="most_pop_hosting__card__image border magenta">
-                                <img src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de la chambre d'hotes">
-                            </div>
-                            <div class="most_pop_hosting__card__body border magenta">
-                                <header class="border grey">
-                                    <h2 class="most_pop_hosting__card__title">Au coeur de l'eau Chambres d'hôtes</h2>
-                                </header>
-                                <footer class="most_pop_hosting__card__footer border grey">
-                                    <p class="most_pop_hosting__card__description border brown">Nuit à partir de 71€</p>
-                                    <div class="most_pop_hosting__card__chart border brown">
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item grey-1 fas fa-star"></i>
-                                    </div>
-                                </footer>
-                            </div>
-                        </a>
-                    </article>
-                    <!--most_pop_hosting__card-->
-                    <article class="most_pop_hosting__card border orange">
-                        <a href="">
-                            <div class="most_pop_hosting__card__image border magenta">
-                                <img src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
-                            </div>
-                            <div class="most_pop_hosting__card__body border magenta">
-                                <header class="border grey">
-                                    <h2 class="most_pop_hosting__card__title">Hôtel Tout bleu et blanc</h2>
-                                </header>
-                                <footer class="most_pop_hosting__card__footer border grey">
-                                    <p class="most_pop_hosting__card__description border brown">Nuit à partir de 68€</p>
-                                    <div class="most_pop_hosting__card__chart border brown">
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
-                                        <i class="most_pop_hosting__card__chart__item grey-1 fas fa-star"></i>
-                                    </div>
-                                </footer>
-                            </div>
-                        </a>
-                    </article>
-                </div>
-            </section>
             <!--hosting-->
             <section class="hosting__list border green">
                 <h2 class="hosting__list__title border blue">Hébergements à Marseille</h2>
@@ -299,6 +221,84 @@
                     </article>
                 </div>
                 <p class="hosting__list__card__more border blue">Afficher plus</p>
+            </section>
+            <!--most popular hosting-->
+            <section class="most_pop_hosting border green">
+                <div class="most_pop_hosting__group__title border blue">
+                    <h2 class="most_pop_hosting__title border orange">Les plus populaires</h2>
+                    <i class="most_pop_hosting__icon fas fa-chart-line border orange"></i>
+                </div>
+                <div class="most_pop_hosting__card__group border blue">
+                    <!--most_pop_hosting__card-->
+                    <article class="most_pop_hosting__card border orange">
+                        <a href="">
+                            <div class="most_pop_hosting__card__image border magenta">
+                                <img src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                            </div>
+                            <div class="most_pop_hosting__card__body border magenta">
+                                <header class="border grey">
+                                    <h2 class="most_pop_hosting__card__title">Hôtel Le soleil du matin</h2>
+                                </header>
+                                <footer class="most_pop_hosting__card__footer border grey">
+                                    <p class="most_pop_hosting__card__description border brown">Nuit à partir de 128€</p>
+                                    <div class="most_pop_hosting__card__chart border brown">
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                    </div>
+                                </footer>
+                            </div>
+                        </a>
+                    </article>
+                    <!--most_pop_hosting__card-->
+                    <article class="most_pop_hosting__card border orange">
+                        <a href="">
+                            <div class="most_pop_hosting__card__image border magenta">
+                                <img src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de la chambre d'hotes">
+                            </div>
+                            <div class="most_pop_hosting__card__body border magenta">
+                                <header class="border grey">
+                                    <h2 class="most_pop_hosting__card__title">Au coeur de l'eau Chambres d'hôtes</h2>
+                                </header>
+                                <footer class="most_pop_hosting__card__footer border grey">
+                                    <p class="most_pop_hosting__card__description border brown">Nuit à partir de 71€</p>
+                                    <div class="most_pop_hosting__card__chart border brown">
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item grey-1 fas fa-star"></i>
+                                    </div>
+                                </footer>
+                            </div>
+                        </a>
+                    </article>
+                    <!--most_pop_hosting__card-->
+                    <article class="most_pop_hosting__card border orange">
+                        <a href="">
+                            <div class="most_pop_hosting__card__image border magenta">
+                                <img src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="">
+                            </div>
+                            <div class="most_pop_hosting__card__body border magenta">
+                                <header class="border grey">
+                                    <h2 class="most_pop_hosting__card__title">Hôtel Tout bleu et Blanc</h2>
+                                </header>
+                                <footer class="most_pop_hosting__card__footer border grey">
+                                    <p class="most_pop_hosting__card__description border brown">Nuit à partir de 68€</p>
+                                    <div class="most_pop_hosting__card__chart border brown">
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item blue-1 fas fa-star"></i>
+                                        <i class="most_pop_hosting__card__chart__item grey-1 fas fa-star"></i>
+                                    </div>
+                                </footer>
+                            </div>
+                        </a>
+                    </article>
+                </div>
             </section>
         </div>
         <!--activity section-->
