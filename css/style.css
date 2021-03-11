@@ -181,7 +181,7 @@
 .filter__title {
     font-size: 1.3em;
     font-weight: bold;
-    margin-right: 15px;
+    margin: 0px 15px 15px 0px;
 }
 
 .filter a {
@@ -289,6 +289,7 @@
 .most_pop_hosting__card__group {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     margin: 0px 30px 0px 30px;
     width: auto;
 }
@@ -338,7 +339,7 @@
 .most_pop_hosting__card__footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around ;
     flex-grow: 1;
 }
 
@@ -377,7 +378,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0px 30px 30px 30px ;
+    margin: 0px 30px 0px 30px ;
 }
 
 .hosting__list__card {
@@ -558,6 +559,7 @@
 .footer__block__list {
     text-align: start;
 }
+
 .footer__block__item {
     font-size: 1em;
     margin-bottom: 7px;
@@ -720,42 +722,115 @@
 }
 
 /*tablette*/
-@media all and (min-width : 576px) and (max-width : 991.98px) {
+
+@media all and (min-width : 576px) and (max-width : 1023.98px) {
     
     .container {
         border: 3px yellow solid;
         width: auto;
     }
 
-    .nav {
-              
+    /*header*/
+
+    .header {
+        padding: 20px;
+    }
+
+    .search-bar__input {
+        width: 500px;
+    }
+
+    /*hosting blocks*/
+
+    #hosting {
+        flex-direction: column-reverse;
+    }   
+
+    .most_pop_hosting {
+        width: auto;
+        border-radius: 0px;
     }
     
-    .nav ul {
-        
+    .most_pop_hosting__card__group {
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        width: auto;
+        justify-content: space-between;
     }
     
-    .nav ul li {
-        
-    }
-    .nav ul a {
-         
-     }
-    
-    .nav ul a:hover {
-         
-     }
-    
-     .menu {
-        
+    .most_pop_hosting__card {
+        width: 250px;
+        margin: 10px 30px 50px 30px;
     }
     
-    .menu p {
-        
+    .most_pop_hosting__card a {
+        flex-direction: column;
     }
     
-    .menu p a {
-        
+    .most_pop_hosting__card__image {
+        width: auto ;
+        border-radius: 15px 15px 0px 0px;
     }
+    
+    .most_pop_hosting__card__image img {
+        width: 100%;
+        object-position: 50% 50%;
+    }
+    
+    .most_pop_hosting__card__body {
+        width: auto;
+        margin: 10px;
+    }
+    
+    .most_pop_hosting__card__title {
+        font-size: 0.9em;
+    }
+    
+    .most_pop_hosting__card__description {
+        font-size: 0.9em;
+        margin-bottom: 5px;
+    }
+ 
+    .most_pop_hosting__card__chart__item {
+        font-size: 0.9em;
+    }
+
+    .hosting__list {
+        width: auto;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        margin-top: 20px;
+    }
+    
+    .hosting__list__group_card {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px ;
+    }
+    
+    .hosting__list__card {
+        width: 190px;
+        margin: 0px 30px 30px 30px;
+    }
+    
+    /*activity*/
+    
+
+    /*footer*/
+
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__block {
+        margin : 0px 0px 30px 0px;
+    }
+
+    .footer__block__list {
+        text-align: center;
+    }
+
     
 }
