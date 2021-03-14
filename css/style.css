@@ -54,11 +54,8 @@
 }
 
 .container {
-    width: 95%;
-    margin: auto ;
-    max-width: 1240px;
-    color: black;
-    font-family: "raleway";
+    width: auto ;
+    margin: 20px ;
 }
 
 
@@ -467,7 +464,7 @@
 
 .activity__card__group {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .activity__horizontal__card__group {
