@@ -229,6 +229,7 @@
 }
 
 /*header--search-info*/
+
 .search-info {
     display: flex ;
     flex-direction: row;
@@ -386,7 +387,7 @@
     box-shadow: 0px 0px 15px grey;
     border-radius: 15px;
     width: 200px;
-    margin-bottom: 50px;
+    margin: 0px 5px 50px 5px;
 }
 
 .hosting__list__card a {
@@ -522,7 +523,7 @@
 
 .activity__horizontal__card__image img {
     width: 100%;
-    height: 100px;
+    height: 100%;
     object-fit: cover ;
     object-position: 50% 50%;
 }
@@ -570,7 +571,6 @@
 @media all and (max-width : 575.98px) {
     
     .container {
-        border: 2px red solid;
         width: auto;
     }
     
@@ -630,6 +630,7 @@
     .search-bar__button__small {
         display: inline-block ;
     }
+    
     /*hosting blocks*/
     
     #hosting {
@@ -656,7 +657,7 @@
     }
     
     .hosting__list__card {
-        width: auto;
+        width: 100%;
         margin-bottom: 25px;
     }
     
@@ -726,7 +727,6 @@
 @media all and (min-width : 576px) and (max-width : 1023.98px) {
     
     .container {
-        border: 3px yellow solid;
         width: auto;
     }
 
@@ -798,25 +798,80 @@
 
     .hosting__list {
         width: auto;
-        background-color: #F2F2F2;
+        background-color :white;
         border-radius: 0px;
         margin-top: 20px;
     }
     
+    .hosting__list__title {
+        margin: 30px ;
+        text-align: center;
+    }
+
     .hosting__list__group_card {
         display: flex;
         flex-wrap: wrap;
         margin: 0px ;
+        justify-content: space-around;
     }
     
     .hosting__list__card {
-        width: 190px;
+        width: 200px;
         margin: 0px 30px 30px 30px;
     }
     
     /*activity*/
     
+    .activity__block {
+        width: auto;
+       padding: 30px;
+       background-color: #F2F2F2;
+    }
+    
+    .activity__block__title {
+        margin-bottom: 35px;
+        text-align: center;
+    }
 
+    .activity__card__group {
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .activity__horizontal__card__group {
+        justify-content: space-between;
+    }
+    
+    .activity__vertical__card {
+        width: 50% ;
+        margin : auto ;
+        margin-bottom: 25px;
+    }
+    
+    .activity__vertical__card__image {
+        height : 200px ;
+        width : 100% ;
+    }
+    
+    .activity__horizontal__card {
+        width: 50% ;
+        margin-bottom: 25px ;
+    }
+    
+    .activity__horizontal__card__image {
+        overflow: hidden;
+        height : 200px ;
+        width : 100% ;
+        border-radius: 15px 15px 0px 0px ;
+    }
+    
+    .activity__horizontal__card__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover ;
+        object-position: 50% 50%;
+    }
+ 
     /*footer*/
 
     .footer {
@@ -831,6 +886,5 @@
     .footer__block__list {
         text-align: center;
     }
-
-    
+       
 }
