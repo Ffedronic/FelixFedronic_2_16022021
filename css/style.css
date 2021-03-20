@@ -1,6 +1,6 @@
 /*border*/
 
-.border {
+/*.border {
 	border: 3px solid black;
     margin: 2px;
     box-sizing: border-box;
@@ -33,7 +33,7 @@
 .brown {
     border-color: brown;
 }
-
+*/
 
 
 /*main style*/
@@ -43,6 +43,9 @@
     padding:0px;
     list-style-type:none;
     color: black;
+}
+
+body {
     font-family: "raleway";
 }
 
@@ -74,7 +77,11 @@
     display: flex;
     margin-bottom: 50px;
     align-items: flex-end;   
-}   
+}
+
+.nav_mobile {
+    display: none;
+}
 
 .menu {
     display: flex;
@@ -534,7 +541,6 @@
     padding: 10px;
 }
 
-
 /*footer*/
 
 .footer {
@@ -575,35 +581,40 @@
     }
     
     .header {
-        padding: 15px;
+        padding: 5px;
     }
+    
     .nav {
-        display: block;
-        position: relative;   
-    }   
-    
-    .menu {
-        margin-top: 20px;
+        display: none;
     }
-    
+
+    .nav_mobile {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .menu {
+        margin-top: 40px;
+    }
+
+    .nav_mobile__img_signup {
+        display: flex;
+        justify-content: space-between;
+        align-items :center;
+    }
+
     .menu__item {
         text-align: center;
-        width: 400px;
+        width: 100%;
         margin-right: 0px;
         padding: 0px 10px 5px 10px;
         border-top: none;
         border-bottom: 5px #F2F2F2 solid;
     }
-    
+
     .menu__item:hover {
         border-top: none;
         border-bottom: 5px #0065FC solid;
-    }
-    
-    .menu__signup {
-        position: absolute;
-        top : 15px ;
-        right: 0px ;
     }
 
     .search-bar__input {
@@ -767,6 +778,7 @@
 
     .menu__item {
         text-align: center;
+        margin-right: 40px;
     }
 
     .search-bar__input {
