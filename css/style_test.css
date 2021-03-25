@@ -269,6 +269,7 @@ body {
 .most_pop_hosting__card a {
     display: flex ;
     overflow: hidden;
+    height: 175px;
 }
 
 .most_pop_hosting__card__image {
