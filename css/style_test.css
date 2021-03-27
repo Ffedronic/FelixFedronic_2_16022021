@@ -414,6 +414,26 @@ body {
     padding: 15px;
 }
 
+/*--footer--*/
+
+.footer {
+    padding: 25px 10px 0px 10px;
+    background-color: #F2F2F2;
+}
+
+.footer__block {
+    margin : 0px 0px 30px 0px ;
+}
+
+.footer__block__title {
+    font-size: 1.2em;
+    margin : 0px 0px 15px 0px ;
+}
+
+.footer__block__list {
+    font-size: 1.1em;
+}
+
 @media all and (min-width : 576px) {
     
     .nav {
@@ -546,7 +566,7 @@ body {
         margin : 0px ;
     }
 
-    .activity__card__column__group .activity__card .activity__card__image {
+    .activity__card__column__group .activity__card__image {
         overflow: hidden;
         height: 100px;
     }
@@ -563,6 +583,19 @@ body {
     .activity__card__title {
         font-size: 1em;
         padding: 15px;
+    }
+
+    /*--footer--*/
+    
+    .footer__block__title {
+        text-align: center;
+        font-size: 1.2em;
+        margin : 0px 0px 15px 0px ;
+    }
+    
+    .footer__block__list {
+        text-align: center;
+        font-size: 1.1em;
     }
 
 
@@ -616,4 +649,26 @@ body {
         font-size: 0.9em;   
     }
 
+    .activity__card__group {
+        flex-wrap: unset;
+    }
+    
+    .activity__card__column__group {
+        margin: 0px 25px 25px 25px;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .footer__block {
+        margin: 0px 150px 0px 0px;
+    }
+    .footer__block__title {
+        text-align :initial;
+    }
+    
+    .footer__block__list {
+        text-align: initial;
+    }
 }
