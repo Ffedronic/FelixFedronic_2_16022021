@@ -1,5 +1,5 @@
 mobile :
-@media all and (max-width : 575.98px)
+@media all and (min-width : 576px)
 
 tablette :
-@media all and (min-width : 576px) and (max-width : 1024px)
+@media all and (min-width : 992px)
