@@ -1,5 +1,5 @@
-mobile :
+tablette :
 @media all and (min-width : 576px)
 
-tablette :
+pc :
 @media all and (min-width : 992px)
