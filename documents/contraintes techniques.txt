@@ -1,0 +1,11 @@
+police :
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+Icones FontAwesome :
+<script src="https://kit.fontawesome.com/26697731b2.js" crossorigin="anonymous"></script>
+
+Charte de couleurs :
+bleu #0065FC
+version plus claire #DEEBFF
+fond gris #F2F2F2
